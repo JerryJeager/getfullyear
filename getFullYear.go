@@ -21,7 +21,7 @@ type FullYear struct {
 // endpoint defines the URL for the GetFullYear API.
 var endpoint = "https://getfullyear.com/api/year"
 
-// GetFullYear retrieves the current year details from the GetFullYear API.
+// Fetch retrieves the current year details from the GetFullYear API.
 //
 // It makes an HTTP GET request to the API, parses the JSON response, and
 // returns the year details as a FullYear struct. If an error occurs
@@ -32,12 +32,12 @@ var endpoint = "https://getfullyear.com/api/year"
 //   - error: An error if the HTTP request or JSON parsing fails.
 //
 // Example usage:
-//   yearData, err := getfullyear.GetFullYear()
+//   yearData, err := getfullyear.Fetch()
 //   if err != nil {
 //       log.Fatalf("Error fetching year data: %v", err)
 //   }
 //   fmt.Printf("Year: %d, Sponsored By: %s\n", yearData.Year, yearData.SponsoredBy)
-func GetFullYear() (*FullYear, error) {
+func Fetch() (*FullYear, error) {
 	var fullYear FullYear
 
 	client := &http.Client{
