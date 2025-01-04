@@ -53,4 +53,3 @@ year: 2025
 sponsored_by: "Coca-cola"
 year_string: "2025"
 ```
-
