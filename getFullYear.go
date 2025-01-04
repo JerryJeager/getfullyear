@@ -1,6 +1,6 @@
-// Package getFullYear provides functionality to retrieve the current year
+// Package getfullyear provides functionality to retrieve the current year
 // and related details from the GetFullYear API.
-package getFullYear
+package getfullyear
 
 import (
 	"encoding/json"
@@ -11,8 +11,8 @@ import (
 	"time"
 )
 
-// getFullYear represents the structure of the response from the GetFullYear API.
-type getFullYear struct {
+// FullYear represents the structure of the response from the GetFullYear API.
+type FullYear struct {
 	Year        int32  `json:"year"`         // Year represents the current year as an integer.
 	SponsoredBy string `json:"sponsored_by"` // SponsoredBy indicates the sponsor of the year data.
 	YearString  string `json:"year_string"`  // YearString is a human-readable representation of the year.
@@ -24,21 +24,21 @@ var endpoint = "https://getfullyear.com/api/year"
 // GetFullYear retrieves the current year details from the GetFullYear API.
 //
 // It makes an HTTP GET request to the API, parses the JSON response, and
-// returns the year details as a getFullYear struct. If an error occurs
+// returns the year details as a FullYear struct. If an error occurs
 // during the HTTP request or JSON parsing, it returns an error.
 //
 // Returns:
-//   - *getFullYear: A pointer to the getFullYear struct containing year details.
+//   - *FullYear: A pointer to the FullYear struct containing year details.
 //   - error: An error if the HTTP request or JSON parsing fails.
 //
 // Example usage:
-//   yearData, err := GetFullYear()
+//   yearData, err := getfullyear.GetFullYear()
 //   if err != nil {
 //       log.Fatalf("Error fetching year data: %v", err)
 //   }
 //   fmt.Printf("Year: %d, Sponsored By: %s\n", yearData.Year, yearData.SponsoredBy)
-func GetFullYear() (*getFullYear, error) {
-	var fullYear getFullYear
+func GetFullYear() (*FullYear, error) {
+	var fullYear FullYear
 
 	client := &http.Client{
 		Timeout: 5 * time.Second,
