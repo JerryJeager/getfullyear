@@ -49,8 +49,8 @@ func main() {
 
 - Output Example 
 ```bash 
-Year: 2025
-Sponsored By: "Coca-cola"
-Year String: "2025"
+year: 2025
+sponsored_by: "Coca-cola"
+year_string: "2025"
 ```
 
