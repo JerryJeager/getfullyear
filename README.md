@@ -21,7 +21,7 @@ go get github.com/JerryJeager/getFullYear
 - Import the package 
 
 ```bash 
-import "github.com/JerryJeager/getFullYear"
+import "github.com/JerryJeager/getfullyear"
 ``` 
 - Fetch the Year Data
 You can use the GetFullYear function to retrieve year details:
@@ -33,7 +33,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/JerryJeager/getFullYear"
+	"github.com/JerryJeager/getfullyear"
 )
 
 func main() {
