@@ -21,7 +21,7 @@ go get github.com/JerryJeager/getFullYear
 - Import the package 
 
 ```bash 
-import "github.com/yourusername/getFullYear"
+import "github.com/JerryJeager/getFullYear"
 ``` 
 - Fetch the Year Data
 You can use the GetFullYear function to retrieve year details:
