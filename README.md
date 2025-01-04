@@ -50,7 +50,7 @@ func main() {
 - Output Example 
 ```bash 
 Year: 2025
-Sponsored By: OpenAI
-Year String: 2025 - Sponsored by OpenAI
+Sponsored By: "Coca-cola"
+Year String: "2025"
 ```
 
