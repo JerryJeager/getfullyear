@@ -13,7 +13,7 @@ The `getFullYear` package provides a simple interface to retrieve the current ye
 To install the package, use the `go get` command:
 
 ```bash
-go get github.com/JerryJeager/getFullYear
+go get github.com/JerryJeager/getfullyear
 ```
 
 ## Usage 
