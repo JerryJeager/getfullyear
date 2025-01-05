@@ -15,7 +15,7 @@ import (
 type FullYear struct {
 	Year        int32  `json:"year"`         // Year represents the current year as an integer.
 	SponsoredBy string `json:"sponsored_by"` // SponsoredBy indicates the sponsor of the year data.
-	YearString  string `json:"year_string"`  // YearString is a human-readable representation of the year.
+	YearString  string `json:"year_string"`  // YearString is a string representation of the year.
 }
 
 // endpoint defines the URL for the GetFullYear API.
