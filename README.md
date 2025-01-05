@@ -6,7 +6,7 @@ The `getFullYear` package provides a simple interface to retrieve the current ye
 
 - Fetch the current year as an integer.
 - Retrieve the sponsor of the year data.
-- Get a human-readable string representation of the year.
+- Get a string representation of the year.
 
 ## Installation
 
