@@ -6,7 +6,7 @@ The `getFullYear` package provides a simple interface to retrieve the current ye
 
 - Fetch the current year as an integer.
 - Retrieve the sponsor of the year data.
-- Get a human-readable string representation of the year.
+- Get a string representation of the year.
 
 ## Installation
 
@@ -24,7 +24,7 @@ go get github.com/JerryJeager/getfullyear
 import "github.com/JerryJeager/getfullyear"
 ``` 
 - Fetch the Year Data
-You can use the GetFullYear function to retrieve year details:
+You can use the Fetch function to retrieve year details:
 
 ```bash 
 package main
@@ -37,7 +37,7 @@ import (
 )
 
 func main() {
-	yearData, err := getFullYear.Fetch()
+	yearData, err := getfullyear.Fetch()
 	if err != nil {
 		log.Fatalf("Error fetching year data: %v", err)
 	}
