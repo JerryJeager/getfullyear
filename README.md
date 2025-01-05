@@ -37,7 +37,7 @@ import (
 )
 
 func main() {
-	yearData, err := getFullYear.Fetch()
+	yearData, err := getfullyear.Fetch()
 	if err != nil {
 		log.Fatalf("Error fetching year data: %v", err)
 	}
